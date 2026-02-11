@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Systems Sentinel | Dashboard de Status</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-animation"></div>
+
+    <main class="container">
+        <header class="header">
+            <div class="logo-area">
+                <div class="logo-icon"></div>
+                <h1>Systems<span class="accent">Sentinel</span></h1>
+            </div>
+            <p class="subtitle">Monitoramento de Ecossistema Digital em Tempo Real</p>
+            <div class="global-status">
+                <span class="pulse-icon"></span>
+                <span id="overall-status">Analisando Sistemas...</span>
+            </div>
+        </header>
+
+        <section class="grid" id="systems-grid">
+            <!-- Os cards serão inseridos via JavaScript -->
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2026 Exclusive Dashboard | <span id="last-update">Última atualização: --:--:--</span></p>
+            <div class="footer-actions">
+                <a href="protecao.html" class="btn-proteja">🛡️ SE PROTEJA</a>
+                <button id="btn-hacker-adm" class="btn-hacker">ACCESS_SHADOW_NET</button>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Modal de Senha -->
+    <div id="password-modal" class="modal">
+        <div class="modal-content">
+            <h2 class="hacker-title">> ENTER_SECURITY_KEY</h2>
+            <input type="password" id="admin-password" placeholder="********" autofocus>
+            <div class="modal-actions">
+                <button id="btn-cancel">CANCEL</button>
+                <button id="btn-confirm">VERIFY</button>
+            </div>
+            <p id="password-error" class="error-msg"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Scripts de manutenção
+find_dupes.js
+cleanup.js
+add_links.js
+dupes_result*.txt
+dupes_utf8*.txt

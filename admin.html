@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADM TERMINAL | Restricted Access</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="scanlines"></div>
+    <div class="terminal-container">
+        <header class="terminal-header">
+            <div class="terminal-controls">
+                <span></span><span></span><span></span>
+            </div>
+            <div class="terminal-title">SHADOW_NET_CONSOLE_V2.0</div>
+            <div class="theme-selector">
+                <button class="theme-btn" data-theme="green">CRT</button>
+                <button class="theme-btn" data-theme="cyan">NEON</button>
+                <button class="theme-btn" data-theme="red">ALERT</button>
+            </div>
+        </header>
+
+        <main class="terminal-body h-split">
+            <aside class="category-sidebar">
+                <div class="search-container">
+                    <input type="text" id="tool-search" placeholder="BUSCAR_FERRAMENTA...">
+                </div>
+                <div class="list-header">> CATEGORIAS</div>
+                <nav id="category-nav">
+                    <button class="cat-btn active" data-cat="OFFENSIVE">OFENSIVO</button>
+                    <button class="cat-btn" data-cat="DEFENSIVE">DEFENSIVO</button>
+                    <button class="cat-btn" data-cat="APPSEC">APPSEC</button>
+                    <button class="cat-btn" data-cat="CLOUD">CLOUD_SEC</button>
+                    <button class="cat-btn" data-cat="FORENSICS">FORENSE</button>
+                    <button class="cat-btn" data-cat="INTEL">INTELIGÊNCIA_GERAL</button>
+                    <button class="cat-btn" data-cat="PESSOAS">PESSOAS_E_IDENTIDADE</button>
+                    <button class="cat-btn" data-cat="EMAIL">EMAIL_PESQUISA</button>
+                    <button class="cat-btn" data-cat="GEO">GEOLOCALIZAÇÃO</button>
+                    <button class="cat-btn" data-cat="EMPRESAS">EMPRESAS_NEGÓCIOS</button>
+                    <button class="cat-btn" data-cat="TECNICAS">TÉCNICAS_METADADOS</button>
+                    <button class="cat-btn" data-cat="VEICULOS">VEÍCULOS_TRÁFEGO</button>
+                    <button class="cat-btn" data-cat="DOMINIOS">DOMÍNIOS_E_DNS</button>
+                    <button class="cat-btn" data-cat="TELEFONES">TELEFONES_E_SMS</button>
+                    <button class="cat-btn" data-cat="CRIPTO">CRIPTOMOEDAS</button>
+                    <button class="cat-btn" data-cat="DOCUMENTOS">DOCUMENTOS_DIGITAIS</button>
+                    <button class="cat-btn" data-cat="IA">INTELIGÊNCIA_ARTIFICIAL</button>
+                    <button class="cat-btn" data-cat="EDUCACAO">RECURSOS_EDUCATIVOS</button>
+                    <button class="cat-btn" data-cat="NICHO">FERRAMENTAS_DE_NICHO</button>
+                    <button class="cat-btn" data-cat="PHISHING">SIMULAÇÃO_PHISHING</button>
+                    <button class="cat-btn" data-cat="DARKWEB">DARK_WEB_GERAL</button>
+                    <button class="cat-btn" data-cat="DATA_ANALYSIS">ANÁLISE_DE_DADOS</button>
+                    <button class="cat-btn" data-cat="PRIVACY">PRIVACIDADE_DIGITAL</button>
+                    <button class="cat-btn" data-cat="SOCIAL">REDES_SOCIAIS</button>
+                    <button class="cat-btn" data-cat="IMAGENS">IMAGENS_E_VÍDEOS</button>
+                    <button class="cat-btn" data-cat="DEV">DESENVOLVIMENTO_WEB</button>
+                    <button class="cat-btn" data-cat="MOBILE">MOBILE_SECURITY</button>
+                    <button class="cat-btn" data-cat="GAMING">GAMING_E_ESTATÍSTICAS</button>
+                    <button class="cat-btn" data-cat="IMOVEIS">IMÓVEIS_E_PATRIMÔNIO</button>
+                    <button class="cat-btn" data-cat="LEGAL">LEGAL_E_JUDICIÁRIO</button>
+                    <button class="cat-btn" data-cat="ACADEMICO">LITERATURA_ACADÊMICA</button>
+                    <button class="cat-btn" data-cat="SAUDE">SAÚDE_E_BÉM-ESTAR</button>
+                    <button class="cat-btn" data-cat="ART">ARTE_E_DESIGN</button>
+                    <button class="cat-btn" data-cat="MUSIC">MÚSICA_E_ÁUDIO</button>
+                    <button class="cat-btn" data-cat="COMMERCE">E-COMMERCE_GLOBAL</button>
+                    <button class="cat-btn" data-cat="EMERGENCY">EMERGÊNCIA_E_RÁDIO</button>
+                    <button class="cat-btn" data-cat="LANGUAGES">TRADUÇÃO_E_IDIOMAS</button>
+                    <button class="cat-btn" data-cat="NEWS">NOTÍCIAS_E_ARQUIVOS</button>
+                    <button class="cat-btn" data-cat="SCIENCE">CIÊNCIA_E_DADOS</button>
+                    <button class="cat-btn" data-cat="GOVERNMENT">GOVERNO_E_TRANSPARÊNCIA</button>
+                    <button class="cat-btn" data-cat="INTL">ORGANIZAÇÕES_INTERNACIONAIS</button>
+                    <button class="cat-btn" data-cat="CARTOGRAPHY">CARTOGRAFIA_HISTÓRICA</button>
+                    <button class="cat-btn" data-cat="INDUSTRY">INDÚSTRIA_E_SUPPLY</button>
+                    <button class="cat-btn" data-cat="PHARMA">FARMÁCIA_E_CLÍNICA</button>
+                    <button class="cat-btn" data-cat="GRC">RISCOS_E_COMPLIANCE</button>
+                    <button class="cat-btn" data-cat="IA_ML">IA_AVANÇADA_ML</button>
+                    <button class="cat-btn" data-cat="BLOCKCHAIN_ADV">BLOCKCHAIN_FORENSICS</button>
+                    <button class="cat-btn" data-cat="RADIO_SDR">RÁDIO_E_SDR</button>
+                    <button class="cat-btn" data-cat="SATELITE_GEO">SATÉLITE_E_GEOINT</button>
+                    <button class="cat-btn" data-cat="DARKWEB_SPEC">DARKWEB_PESQUISA</button>
+                    <button class="cat-btn" data-cat="DEV_AUTOMATION">AUTOMAÇÃO_WEB</button>
+                    <button class="cat-btn" data-cat="DATA_VIS_NET">VIS_REDES_GRAFOS</button>
+                    <button class="cat-btn" data-cat="LEAKS_DB">BANCOS_DE_VAZAMENTOS</button>
+                    <button class="cat-btn" data-cat="PHISHING_ADV">PHISHING_AVANÇADO</button>
+                    <button class="cat-btn" data-cat="BLUE_TEAM_OSINT">OSINT_PARA_BLUE_TEAM</button>
+                    <button class="cat-btn" data-cat="SEARCH_DORKS">DORKS_E_BUSCA_AVANÇADA</button>
+                    <button class="cat-btn" data-cat="MOBILE_ADV">MOBILE_FORENSICS_ADV</button>
+                    <button class="cat-btn" data-cat="INFRA_NET">INFRAESTRUTURA_REDES</button>
+                    <button class="cat-btn" data-cat="GAMING_INTEL">GAMING_INTELLIGENCE</button>
+                    <button class="cat-btn" data-cat="COMPLIANCE_LEGAL">COMPLIANCE_E_PRIVACIDADE</button>
+                    <button class="cat-btn" data-cat="BIO_GENEALOGIA">BIOMETRIA_E_GENEALOGIA</button>
+                    <button class="cat-btn" data-cat="DESIGN_PATENTS">DESIGN_E_PATENTES</button>
+                    <button class="cat-btn" data-cat="MUSIC_AUDIO_ADV">MÚSICA_E_ÁUDIO_AVANÇADO</button>
+                    <button class="cat-btn" data-cat="FOOD_SERVICE">ALIMENTAÇÃO_E_SERVIÇOS</button>
+                    <button class="cat-btn" data-cat="EMERGENCY_GLOBAL">EMERGÊNCIA_GLOBAL</button>
+                    <button class="cat-btn" data-cat="ENVIRONMENT_OSINT">AMBIENTAL_E_RECURSOS</button>
+                    <button class="cat-btn" data-cat="EDUCATION_ADV">EDUCAÇÃO_CONTINUADA</button>
+                    <button class="cat-btn" data-cat="HEALTH_MEDICAL">SAÚDE_E_MEDICINA</button>
+                    <button class="cat-btn" data-cat="LAW_LEGISLATION">LEGISLAÇÃO_E_DIREITO</button>
+                    <button class="cat-btn" data-cat="ECOMMERCE_MARKET">E-COMMERCE_E_MARKET</button>
+                    <button class="cat-btn" data-cat="VEHICLES_TRANS_ADV">TRANSPORTE_E_LOGÍSTICA</button>
+                    <button class="cat-btn" data-cat="COMMUNITIES_INTEL">COMUNIDADES_E_FORUNS</button>
+                    <button class="cat-btn" data-cat="TRAINING_CTF">TREINAMENTO_E_CTF</button>
+                    <button class="cat-btn" data-cat="PODCASTS_YT">PODCASTS_E_YOUTUBE</button>
+                    <button class="cat-btn" data-cat="NEWSLETTERS_BLOGS">NEWSLETTERS_E_BLOGS</button>
+                </nav>
+            </aside>
+
+            <section class="main-content">
+                <section class="activity-monitor">
+                    <div class="list-header" id="current-cat-title">> TOOLS: OFFENSIVE</div>
+                    <div class="activity-content" id="tool-list">
+                        <!-- Ferramentas geradas via JS -->
+                    </div>
+                </section>
+
+                <section class="log-viewer">
+                    <div class="list-header">> TAIL -F /VAR/LOG/NETWORK_SCANNER</div>
+                    <div class="log-content" id="log-stream">
+                        <!-- Logs técnicos vindo via JS -->
+                    </div>
+                </section>
+
+            </section>
+        </main>
+
+        <!-- Tool Detail Modal -->
+        <div id="tool-modal" class="modal">
+            <div class="modal-content large">
+                <h2 class="hacker-title" id="modal-tool-name">> TOOL_DETAILS</h2>
+                <div class="scroll-area">
+                    <div class="detail-section">
+                        <div class="label">DESCRIÇÃO:</div>
+                        <p id="modal-tool-desc">--</p>
+                    </div>
+                    <div class="detail-section">
+                        <div class="label">COMPATIBILIDADE_OS:</div>
+                        <div id="modal-tool-os" class="os-badges">
+                            <!-- Badges geradas via JS -->
+                        </div>
+                    </div>
+                    <div class="detail-section">
+                        <div class="label">GUIA_DE_INSTALAÇÃO:</div>
+                        <div class="os-selector" id="install-os-selector">
+                            <button class="os-tab active" data-os="lin">LINUX</button>
+                            <button class="os-tab" data-os="win">WINDOWS</button>
+                            <button class="os-tab" data-os="termux">TERMUX</button>
+                            <button class="os-tab" data-os="web">WEB</button>
+                        </div>
+                        <pre id="modal-tool-install" class="code-block"></pre>
+                    </div>
+                    <div class="detail-section">
+                        <div class="label">DOCUMENTAÇÃO_OFICIAL (README):</div>
+                        <div id="modal-tool-readme" class="readme-block">
+                            <div class="blink">Aguardando sincronização de dados...</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-actions">
+                    <button id="btn-close-tool">FECHAR</button>
+                    <a id="btn-repo-link" href="#" target="_blank" class="nav-link">ACESSAR_FONTE</a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="terminal-footer">
+            <div class="footer-left">
+                <span id="shell-prompt">shadow@net-core:~$</span>
+                <input type="text" id="shell-input" autocomplete="off" spellcheck="false">
+            </div>
+            <span class="version-tag">ST-09 [REDACTED]</span>
+        </footer>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+
+</html>

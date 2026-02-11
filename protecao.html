@@ -1,0 +1,1470 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Proteção Digital | OSINT Defensivo</title>
+    <meta name="description"
+        content="Guia definitivo de proteção pessoal digital com 8 camadas de segurança, ferramentas gratuitas e pagas para privacidade online.">
+    <link rel="stylesheet" href="protecao.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+<style>
+.tool-name a {
+    color: inherit;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+.tool-name a:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+}
+.tool-name a::after {
+    content: ' ↗';
+    font-size: 0.7em;
+    opacity: 0.5;
+}
+</style>
+</head>
+
+<body>
+    <div class="bg-mesh"></div>
+
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+        <a href="index.html" class="nav-brand">
+            <div class="shield-icon">🛡️</div>
+            <h1>Proteção<span>Digital</span></h1>
+        </a>
+        <a href="index.html" class="nav-back">← Voltar ao Dashboard</a>
+    </nav>
+
+    <div class="page-content">
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-badge">🛡️ GUIA DEFINITIVO 2026</div>
+            <h2>Proteção Pessoal <span class="gradient-text">Digital</span></h2>
+            <p>Um guia completo e prático para proteger sua identidade, comunicações e dados online. Do básico ao
+                avançado, com ferramentas reais.</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">8</div>
+                    <div class="stat-label">Camadas</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label">Ferramentas</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">Níveis</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Layer Nav -->
+        <div class="layer-nav">
+            <div class="layer-nav-title">Navegação Rápida</div>
+            <div class="layer-nav-links">
+                <a href="#camada1" class="layer-link"><span class="layer-num">1</span>Monitoramento</a>
+                <a href="#camada2" class="layer-link"><span class="layer-num">2</span>Comunicações</a>
+                <a href="#camada3" class="layer-link"><span class="layer-num">3</span>Navegação</a>
+                <a href="#camada4" class="layer-link"><span class="layer-num">4</span>Autenticação</a>
+                <a href="#camada5" class="layer-link"><span class="layer-num">5</span>Dispositivos</a>
+                <a href="#camada6" class="layer-link"><span class="layer-num">6</span>Anti-OSINT</a>
+                <a href="#camada7" class="layer-link"><span class="layer-num">7</span>Backup</a>
+                <a href="#camada8" class="layer-link"><span class="layer-num">8</span>Financeiro</a>
+                <a href="#plano" class="layer-link"><span class="layer-num">★</span>Plano</a>
+            </div>
+        </div>
+
+        <!-- ======== CAMADA 1 ======== -->
+        <section class="layer-section layer-1" id="camada1">
+            <div class="layer-header">
+                <div class="layer-icon">🔍</div>
+                <div class="layer-header-text">
+                    <h3>Camada 1: Conscientização e Monitoramento</h3>
+                    <p>Descubra o que já está exposto sobre você na internet</p>
+                </div>
+            </div>
+
+            <div class="sub-section">
+                <div class="sub-header"><span class="sub-icon">🔍</span>
+                    <h4>1.1 Verificação de Vazamentos</h4>
+                </div>
+                <div class="tool-table-wrapper">
+                    <table class="tool-table">
+                        <thead>
+                            <tr>
+                                <th>Ferramenta</th>
+                                <th>Tipo</th>
+                                <th>Custo</th>
+                                <th>Função Principal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tool-name"><a href="https://haveibeenpwned.com" target="_blank" rel="noopener">Have I Been Pwned</a></td>
+                                <td>Web</td>
+                                <td><span class="badge badge-mixed">Grátis/Pago</span></td>
+                                <td>Verifica e-mails em vazamentos. Cadastrar para alertas automáticos.</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://dehashed.com" target="_blank" rel="noopener">DeHashed</a></td>
+                                <td>Web/API</td>
+                                <td><span class="badge badge-paid">$5/mês</span></td>
+                                <td>Busca avançada em breaches — e-mails, usernames, telefones.</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://intelx.io" target="_blank" rel="noopener">Intelligence X</a></td>
+                                <td>Web</td>
+                                <td><span class="badge badge-mixed">Créditos</span></td>
+                                <td>Busca em dados expostos e dark web.</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://leak-lookup.com" target="_blank" rel="noopener">Leak-Lookup</a></td>
+                                <td>Web</td>
+                                <td><span class="badge badge-mixed">Grátis/Pago</span></td>
+                                <td>Busca em múltiplos bancos de vazados.</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://scylla.sh" target="_blank" rel="noopener">Scylla.sh</a></td>
+                                <td>Web</td>
+                                <td><span class="badge badge-free">Grátis</span></td>
+                                <td>Busca em credenciais vazadas.</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://breachdirectory.org" target="_blank" rel="noopener">BreachDirectory</a></td>
+                                <td>Web</td>
+                                <td><span class="badge badge-free">Grátis</span></td>
+                                <td>Verificação de vazamentos de e-mail.</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://ghostproject.fr" target="_blank" rel="noopener">GhostProject</a></td>
+                                <td>Web</td>
+                                <td><span class="badge badge-free">Grátis</span></td>
+                                <td>Busca de senhas vazadas.</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://snusbase.com" target="_blank" rel="noopener">Snusbase</a></td>
+                                <td>Web</td>
+                                <td><span class="badge badge-paid">$15/mês</span></td>
+                                <td>Busca profissional em bancos vazados.</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://leakcheck.io" target="_blank" rel="noopener">LeakCheck.io</a></td>
+                                <td>Web</td>
+                                <td><span class="badge badge-mixed">Grátis/Pago</span></td>
+                                <td>Monitoramento contínuo de vazamentos.</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://github.com/hmaverickadams/breach-parse" target="_blank" rel="noopener">BreachParse</a></td>
+                                <td>Tool</td>
+                                <td><span class="badge badge-free">Grátis</span></td>
+                                <td>Parsing local de dados de vazamentos.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="workflow-box">
+                    <div class="workflow-title">🔧 Workflow de Monitoramento</div>
+                    <ol>
+                        <li><span class="step-num">1</span>Cadastrar todos os e-mails no Have I Been Pwned (alertas
+                            gratuitos)</li>
+                        <li><span class="step-num">2</span>Verificar periodicamente no DeHashed (busca mais profunda)
+                        </li>
+                        <li><span class="step-num">3</span>Usar Intelligence X para buscas na dark web</li>
+                        <li><span class="step-num">4</span>Configurar alertas no LeakCheck.io</li>
+                        <li><span class="step-num">5</span>Documentar exposições encontradas</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="sub-section">
+                <div class="sub-header"><span class="sub-icon">👤</span>
+                    <h4>1.2 Dados Pessoais Expostos</h4>
+                </div>
+                <div class="tool-table-wrapper">
+                    <table class="tool-table">
+                        <thead>
+                            <tr>
+                                <th>Ferramenta</th>
+                                <th>Custo</th>
+                                <th>Função</th>
+                                <th>Uso Defensivo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tool-name"><a href="https://pipl.com" target="_blank" rel="noopener">Pipl</a></td>
+                                <td><span class="badge badge-paid">$99/mês</span></td>
+                                <td>Busca profissional de pessoas</td>
+                                <td>Verificar dados disponíveis sobre você</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://www.spokeo.com" target="_blank" rel="noopener">Spokeo</a></td>
+                                <td><span class="badge badge-paid">$13.75/mês</span></td>
+                                <td>Agregador de dados pessoais</td>
+                                <td>Verificar exposição de informações</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://www.whitepages.com" target="_blank" rel="noopener">Whitepages</a></td>
+                                <td><span class="badge badge-mixed">Grátis/Pago</span></td>
+                                <td>Busca de pessoas e telefones</td>
+                                <td>Checar se seu telefone está listado</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://thatsthem.com" target="_blank" rel="noopener">That's Them</a></td>
+                                <td><span class="badge badge-free">Grátis</span></td>
+                                <td>Busca reversa de pessoas</td>
+                                <td>Verificar dados expostos</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://www.truepeoplesearch.com" target="_blank" rel="noopener">TruePeopleSearch</a></td>
+                                <td><span class="badge badge-free">Grátis</span></td>
+                                <td>Registros públicos</td>
+                                <td>Encontrar e solicitar remoção</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://www.fastpeoplesearch.com" target="_blank" rel="noopener">FastPeopleSearch</a></td>
+                                <td><span class="badge badge-free">Grátis</span></td>
+                                <td>Busca rápida de pessoas</td>
+                                <td>Identificar exposição</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://www.familytreenow.com" target="_blank" rel="noopener">FamilyTreeNow</a></td>
+                                <td><span class="badge badge-free">Grátis</span></td>
+                                <td>Dados genealógicos</td>
+                                <td>Verificar dados familiares expostos</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://www.peekyou.com" target="_blank" rel="noopener">PeekYou</a></td>
+                                <td><span class="badge badge-free">Grátis</span></td>
+                                <td>Busca em redes sociais</td>
+                                <td>Verificar agregação de perfis</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tip-box warning">
+                    <span class="tip-icon">⚠️</span>
+                    <div>
+                        <strong>Serviços de Remoção de Dados:</strong> DeleteMe ($129/ano), Incogni ($5.79/mês), Kanary
+                        ($105/ano), OneRep ($8.33/mês) — removem seus dados de data brokers automaticamente.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== CAMADA 2 ======== -->
+        <section class="layer-section layer-2" id="camada2">
+            <div class="layer-header">
+                <div class="layer-icon">📧</div>
+                <div class="layer-header-text">
+                    <h3>Camada 2: Segurança de Comunicações</h3>
+                    <p>Proteja seus e-mails, mensagens e conversas</p>
+                </div>
+            </div>
+
+            <div class="sub-section">
+                <div class="sub-header"><span class="sub-icon">📧</span>
+                    <h4>2.1 E-mail Seguro e Privado</h4>
+                </div>
+                <div class="tool-table-wrapper">
+                    <table class="tool-table">
+                        <thead>
+                            <tr>
+                                <th>Serviço</th>
+                                <th>Custo</th>
+                                <th>Recursos</th>
+                                <th>Privacidade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tool-name"><a href="https://proton.me/mail" target="_blank" rel="noopener">ProtonMail</a></td>
+                                <td><span class="badge badge-mixed">Grátis/€5/mês</span></td>
+                                <td>Criptografia zero-knowledge, Suíça</td>
+                                <td class="stars">⭐⭐⭐⭐⭐</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://tuta.com" target="_blank" rel="noopener">Tutanota</a></td>
+                                <td><span class="badge badge-mixed">Grátis/€3/mês</span></td>
+                                <td>Criptografia automática, Alemanha</td>
+                                <td class="stars">⭐⭐⭐⭐⭐</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://www.startmail.com" target="_blank" rel="noopener">StartMail</a></td>
+                                <td><span class="badge badge-paid">$5/mês</span></td>
+                                <td>Sem rastreamento, Holanda</td>
+                                <td class="stars">⭐⭐⭐⭐</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://mailfence.com" target="_blank" rel="noopener">Mailfence</a></td>
+                                <td><span class="badge badge-mixed">Grátis/€2.50/mês</span></td>
+                                <td>OpenPGP, Bélgica</td>
+                                <td class="stars">⭐⭐⭐⭐</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://posteo.de" target="_blank" rel="noopener">Posteo</a></td>
+                                <td><span class="badge badge-paid">€1/mês</span></td>
+                                <td>Sustentável, criptografado, Alemanha</td>
+                                <td class="stars">⭐⭐⭐⭐</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://countermail.com" target="_blank" rel="noopener">CounterMail</a></td>
+                                <td><span class="badge badge-paid">$29/6 meses</span></td>
+                                <td>OpenPGP, Suécia</td>
+                                <td class="stars">⭐⭐⭐⭐⭐</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="workflow-box">
+                    <div class="workflow-title">⚙️ Configuração Ideal</div>
+                    <ol>
+                        <li><span class="step-num">📌</span><strong>E-mail principal:</strong> ProtonMail ou Tutanota
+                            (pessoal/importante)</li>
+                        <li><span class="step-num">📌</span><strong>E-mail secundário:</strong> SimpleLogin/AnonAddy
+                            (para cadastros)</li>
+                        <li><span class="step-num">📌</span><strong>E-mail descartável:</strong> TempMail/Guerrilla Mail
+                            (uso único)</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="sub-section">
+                <div class="sub-header"><span class="sub-icon">📨</span>
+                    <h4>2.2 Aliases e E-mails Descartáveis</h4>
+                </div>
+                <div class="tool-table-wrapper">
+                    <table class="tool-table">
+                        <thead>
+                            <tr>
+                                <th>Ferramenta</th>
+                                <th>Custo</th>
+                                <th>Função</th>
+                                <th>Uso</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tool-name"><a href="https://simplelogin.io" target="_blank" rel="noopener">SimpleLogin</a></td>
+                                <td><span class="badge badge-mixed">Grátis/$4/mês</span></td>
+                                <td>Aliases ilimitados</td>
+                                <td>E-mail único por serviço</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://addy.io" target="_blank" rel="noopener">AnonAddy</a></td>
+                                <td><span class="badge badge-mixed">Grátis/$3/mês</span></td>
+                                <td>Aliases open source</td>
+                                <td>Alternativa ao SimpleLogin</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://relay.firefox.com" target="_blank" rel="noopener">Firefox Relay</a></td>
+                                <td><span class="badge badge-mixed">Grátis/$0.99/mês</span></td>
+                                <td>Aliases da Mozilla</td>
+                                <td>Integração com Firefox</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://duckduckgo.com/email" target="_blank" rel="noopener">DuckDuckGo Email</a></td>
+                                <td><span class="badge badge-free">Grátis</span></td>
+                                <td>Remove rastreadores</td>
+                                <td>Proteção de e-mail principal</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://temp-mail.org" target="_blank" rel="noopener">TempMail</a></td>
+                                <td><span class="badge badge-free">Grátis</span></td>
+                                <td>E-mails temporários</td>
+                                <td>Cadastros únicos</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://www.guerrillamail.com" target="_blank" rel="noopener">Guerrilla Mail</a></td>
+                                <td><span class="badge badge-free">Grátis</span></td>
+                                <td>E-mails descartáveis</td>
+                                <td>Uso instantâneo</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://10minutemail.com" target="_blank" rel="noopener">10 Minute Mail</a></td>
+                                <td><span class="badge badge-free">Grátis</span></td>
+                                <td>E-mails de 10 minutos</td>
+                                <td>Verificações rápidas</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="sub-section">
+                <div class="sub-header"><span class="sub-icon">💬</span>
+                    <h4>2.3 Mensageiros Seguros</h4>
+                </div>
+                <div class="tool-table-wrapper">
+                    <table class="tool-table">
+                        <thead>
+                            <tr>
+                                <th>App</th>
+                                <th>Custo</th>
+                                <th>Protocolo</th>
+                                <th>Recursos Especiais</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tool-name"><a href="https://signal.org" target="_blank" rel="noopener">Signal</a></td>
+                                <td><span class="badge badge-free">Grátis</span></td>
+                                <td>Signal Protocol (E2EE)</td>
+                                <td>Autowipe, blur de faces</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://getsession.org" target="_blank" rel="noopener">Session</a></td>
+                                <td><span class="badge badge-free">Grátis</span></td>
+                                <td>Onion routing</td>
+                                <td>Anonimato total, sem número</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://element.io" target="_blank" rel="noopener">Element/Matrix</a></td>
+                                <td><span class="badge badge-free">Grátis</span></td>
+                                <td>Matrix E2EE</td>
+                                <td>Descentralizado</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://threema.ch" target="_blank" rel="noopener">Threema</a></td>
+                                <td><span class="badge badge-paid">$4.99</span></td>
+                                <td>NaCl E2EE</td>
+                                <td>Suíça, sem número necessário</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://wire.com" target="_blank" rel="noopener">Wire</a></td>
+                                <td><span class="badge badge-mixed">Grátis/Pago</span></td>
+                                <td>Proteus E2EE</td>
+                                <td>Código aberto, compliance</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://briarproject.org" target="_blank" rel="noopener">Briar</a></td>
+                                <td><span class="badge badge-free">Grátis</span></td>
+                                <td>P2P via Tor/Bluetooth</td>
+                                <td>Funciona sem internet</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tip-box success">
+                    <span class="tip-icon">✅</span>
+                    <div><strong>Recomendação:</strong> Signal para comunicação diária, Session para anonimato, Wire
+                        para uso corporativo.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== CAMADA 3 ======== -->
+        <section class="layer-section layer-3" id="camada3">
+            <div class="layer-header">
+                <div class="layer-icon">🌐</div>
+                <div class="layer-header-text">
+                    <h3>Camada 3: Navegação e Privacidade Online</h3>
+                    <p>Navegue sem ser rastreado</p>
+                </div>
+            </div>
+
+            <div class="sub-section">
+                <div class="sub-header"><span class="sub-icon">🌐</span>
+                    <h4>3.1 Navegadores Privados</h4>
+                </div>
+                <div class="tool-table-wrapper">
+                    <table class="tool-table">
+                        <thead>
+                            <tr>
+                                <th>Navegador</th>
+                                <th>Motor</th>
+                                <th>Recursos de Privacidade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tool-name"><a href="https://www.torproject.org" target="_blank" rel="noopener">Tor Browser</a></td>
+                                <td>Gecko</td>
+                                <td>Anonimato via rede Tor, anti-fingerprinting</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://brave.com" target="_blank" rel="noopener">Brave</a></td>
+                                <td>Chromium</td>
+                                <td>Bloqueio de trackers, Tor integrado</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://www.mozilla.org/firefox" target="_blank" rel="noopener">Firefox</a></td>
+                                <td>Gecko</td>
+                                <td>Containers, Enhanced Tracking Protection</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://librewolf.net" target="_blank" rel="noopener">LibreWolf</a></td>
+                                <td>Gecko</td>
+                                <td>Firefox hardenizado, sem telemetria</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://divestos.org/pages/our_apps#mull" target="_blank" rel="noopener">Mull</a></td>
+                                <td>Gecko</td>
+                                <td>Firefox mobile privado (Android)</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://duckduckgo.com/app" target="_blank" rel="noopener">DuckDuckGo Browser</a></td>
+                                <td>WebKit</td>
+                                <td>Queimador de e-mail, proteção total</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="sub-section">
+                <div class="sub-header"><span class="sub-icon">🔒</span>
+                    <h4>3.2 VPNs Confiáveis</h4>
+                </div>
+                <div class="tool-table-wrapper">
+                    <table class="tool-table">
+                        <thead>
+                            <tr>
+                                <th>VPN</th>
+                                <th>Custo</th>
+                                <th>Jurisdição</th>
+                                <th>Recursos</th>
+                                <th>Auditada</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tool-name"><a href="https://mullvad.net" target="_blank" rel="noopener">Mullvad</a></td>
+                                <td><span class="badge badge-paid">€5/mês</span></td>
+                                <td>Suécia</td>
+                                <td>Sem e-mail, WireGuard</td>
+                                <td>Sim ✅</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://protonvpn.com" target="_blank" rel="noopener">ProtonVPN</a></td>
+                                <td><span class="badge badge-mixed">Grátis/€5/mês</span></td>
+                                <td>Suíça</td>
+                                <td>Secure Core, Tor over VPN</td>
+                                <td>Sim ✅</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://www.ivpn.net" target="_blank" rel="noopener">IVPN</a></td>
+                                <td><span class="badge badge-paid">$6/mês</span></td>
+                                <td>Gibraltar</td>
+                                <td>Anti-tracker, hardenizado</td>
+                                <td>Sim ✅</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://windscribe.com" target="_blank" rel="noopener">Windscribe</a></td>
+                                <td><span class="badge badge-mixed">Grátis/$9/mês</span></td>
+                                <td>Canadá</td>
+                                <td>R.O.B.E.R.T. bloqueio</td>
+                                <td>Sim ✅</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://surfshark.com" target="_blank" rel="noopener">Surfshark</a></td>
+                                <td><span class="badge badge-paid">$2.49/mês</span></td>
+                                <td>Holanda</td>
+                                <td>Dispositivos ilimitados</td>
+                                <td>Sim ✅</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://nordvpn.com" target="_blank" rel="noopener">NordVPN</a></td>
+                                <td><span class="badge badge-paid">$3.49/mês</span></td>
+                                <td>Panamá</td>
+                                <td>Threat Protection, Meshnet</td>
+                                <td>Sim ✅</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tip-box danger">
+                    <span class="tip-icon">🚫</span>
+                    <div><strong>VPNs a EVITAR:</strong> VPNs gratuitos que vendem dados como Hola VPN, Betternet,
+                        SuperVPN, etc.</div>
+                </div>
+            </div>
+
+            <div class="sub-section">
+                <div class="sub-header"><span class="sub-icon">🔍</span>
+                    <h4>3.3 Motores de Busca Privados</h4>
+                </div>
+                <div class="tool-table-wrapper">
+                    <table class="tool-table">
+                        <thead>
+                            <tr>
+                                <th>Motor</th>
+                                <th>Indexador</th>
+                                <th>Recursos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tool-name"><a href="https://duckduckgo.com" target="_blank" rel="noopener">DuckDuckGo</a></td>
+                                <td>Próprio + Bing</td>
+                                <td>!bangs, sem rastreamento</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://www.startpage.com" target="_blank" rel="noopener">Startpage</a></td>
+                                <td>Google (proxy)</td>
+                                <td>Resultados Google sem rastreamento</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://docs.searxng.org" target="_blank" rel="noopener">SearXNG</a></td>
+                                <td>Agregador</td>
+                                <td>Metabuscador open source (self-host)</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://search.brave.com" target="_blank" rel="noopener">Brave Search</a></td>
+                                <td>Próprio</td>
+                                <td>Indexação independente</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://kagi.com" target="_blank" rel="noopener">Kagi</a></td>
+                                <td>Próprio</td>
+                                <td>Personalização, sem anúncios ($10/mês)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== CAMADA 4 ======== -->
+        <section class="layer-section layer-4" id="camada4">
+            <div class="layer-header">
+                <div class="layer-icon">🔑</div>
+                <div class="layer-header-text">
+                    <h3>Camada 4: Autenticação e Segurança de Contas</h3>
+                    <p>Senhas fortes e autenticação em múltiplos fatores</p>
+                </div>
+            </div>
+
+            <div class="sub-section">
+                <div class="sub-header"><span class="sub-icon">🔑</span>
+                    <h4>4.1 Gerenciadores de Senhas</h4>
+                </div>
+                <div class="tool-table-wrapper">
+                    <table class="tool-table">
+                        <thead>
+                            <tr>
+                                <th>Gerenciador</th>
+                                <th>Custo</th>
+                                <th>Criptografia</th>
+                                <th>Código Aberto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tool-name"><a href="https://bitwarden.com" target="_blank" rel="noopener">Bitwarden</a></td>
+                                <td><span class="badge badge-mixed">Grátis/$10/ano</span></td>
+                                <td>AES-256</td>
+                                <td>Sim ✅</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://keepassxc.org" target="_blank" rel="noopener">KeePassXC</a></td>
+                                <td><span class="badge badge-free">Grátis</span></td>
+                                <td>AES-256/ChaCha20</td>
+                                <td>Sim ✅</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://1password.com" target="_blank" rel="noopener">1Password</a></td>
+                                <td><span class="badge badge-paid">$2.99/mês</span></td>
+                                <td>AES-256</td>
+                                <td>Não</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://proton.me/pass" target="_blank" rel="noopener">Proton Pass</a></td>
+                                <td><span class="badge badge-mixed">Grátis/Pago</span></td>
+                                <td>E2EE</td>
+                                <td>Sim ✅</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tip-box success">
+                    <span class="tip-icon">💡</span>
+                    <div><strong>Configuração ideal:</strong> Bitwarden (nuvem) + KeePassXC (backup local offline). Use
+                        senhas únicas de 20+ caracteres para cada conta.</div>
+                </div>
+            </div>
+
+            <div class="sub-section">
+                <div class="sub-header"><span class="sub-icon">🛡️</span>
+                    <h4>4.2 Autenticação 2FA/MFA</h4>
+                </div>
+                <div class="tool-table-wrapper">
+                    <table class="tool-table">
+                        <thead>
+                            <tr>
+                                <th>App</th>
+                                <th>Tipo</th>
+                                <th>Backup</th>
+                                <th>Open Source</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tool-name"><a href="https://getaegis.app" target="_blank" rel="noopener">Aegis</a></td>
+                                <td>TOTP</td>
+                                <td>Criptografado</td>
+                                <td>Sim ✅</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://github.com/andOTP/andOTP" target="_blank" rel="noopener">andOTP</a></td>
+                                <td>TOTP</td>
+                                <td>Criptografado</td>
+                                <td>Sim ✅</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://authy.com" target="_blank" rel="noopener">Authy</a></td>
+                                <td>TOTP</td>
+                                <td>Nuvem criptografada</td>
+                                <td>Não</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://2fas.com" target="_blank" rel="noopener">2FAS</a></td>
+                                <td>TOTP</td>
+                                <td>Criptografado</td>
+                                <td>Não</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="sub-section">
+                <div class="sub-header"><span class="sub-icon">🔐</span>
+                    <h4>4.3 Chaves de Segurança Físicas (FIDO2/U2F)</h4>
+                </div>
+                <div class="tool-table-wrapper">
+                    <table class="tool-table">
+                        <thead>
+                            <tr>
+                                <th>Dispositivo</th>
+                                <th>Custo</th>
+                                <th>Conectividade</th>
+                                <th>Certificações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tool-name"><a href="https://www.yubico.com" target="_blank" rel="noopener">YubiKey 5 NFC</a></td>
+                                <td><span class="badge badge-paid">$50</span></td>
+                                <td>USB-A/C, NFC</td>
+                                <td>FIDO2, U2F, PIV</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://www.yubico.com" target="_blank" rel="noopener">YubiKey Bio</a></td>
+                                <td><span class="badge badge-paid">$85</span></td>
+                                <td>USB-A/C</td>
+                                <td>FIDO2, biometria</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://solokeys.com" target="_blank" rel="noopener">SoloKeys</a></td>
+                                <td><span class="badge badge-paid">$25</span></td>
+                                <td>USB-A/C</td>
+                                <td>FIDO2, open source</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://www.nitrokey.com" target="_blank" rel="noopener">Nitrokey</a></td>
+                                <td><span class="badge badge-paid">€29</span></td>
+                                <td>USB-A</td>
+                                <td>FIDO2, PGP, open source</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://store.google.com/product/titan_security_key" target="_blank" rel="noopener">Google Titan Key</a></td>
+                                <td><span class="badge badge-paid">$35</span></td>
+                                <td>USB-C/NFC</td>
+                                <td>FIDO2, U2F</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== CAMADA 5 ======== -->
+        <section class="layer-section layer-5" id="camada5">
+            <div class="layer-header">
+                <div class="layer-icon">💾</div>
+                <div class="layer-header-text">
+                    <h3>Camada 5: Proteção de Dispositivos e Dados</h3>
+                    <p>Criptografia, celulares seguros e sistemas operacionais privados</p>
+                </div>
+            </div>
+
+            <div class="sub-section">
+                <div class="sub-header"><span class="sub-icon">💾</span>
+                    <h4>5.1 Criptografia de Disco e Arquivos</h4>
+                </div>
+                <div class="tool-table-wrapper">
+                    <table class="tool-table">
+                        <thead>
+                            <tr>
+                                <th>Ferramenta</th>
+                                <th>Custo</th>
+                                <th>Plataforma</th>
+                                <th>Tipo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tool-name"><a href="https://veracrypt.fr" target="_blank" rel="noopener">VeraCrypt</a></td>
+                                <td><span class="badge badge-free">Grátis</span></td>
+                                <td>Win/Mac/Linux</td>
+                                <td>Criptografia de disco/partição</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://support.microsoft.com/windows/bitlocker" target="_blank" rel="noopener">BitLocker</a></td>
+                                <td><span class="badge badge-free">Win Pro</span></td>
+                                <td>Windows</td>
+                                <td>Criptografia integrada</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://cryptomator.org" target="_blank" rel="noopener">Cryptomator</a></td>
+                                <td><span class="badge badge-mixed">Grátis/Pago</span></td>
+                                <td>Todas</td>
+                                <td>Criptografia de nuvem (client-side)</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://gnupg.org" target="_blank" rel="noopener">GnuPG (GPG)</a></td>
+                                <td><span class="badge badge-free">Grátis</span></td>
+                                <td>Todas</td>
+                                <td>Criptografia PGP clássica</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://github.com/FiloSottile/age" target="_blank" rel="noopener">Age</a></td>
+                                <td><span class="badge badge-free">Grátis</span></td>
+                                <td>Todas</td>
+                                <td>Criptografia moderna de arquivos</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="sub-section">
+                <div class="sub-header"><span class="sub-icon">📱</span>
+                    <h4>5.2 Proteção Mobile</h4>
+                </div>
+                <div class="tool-table-wrapper">
+                    <table class="tool-table">
+                        <thead>
+                            <tr>
+                                <th>Ferramenta</th>
+                                <th>Plataforma</th>
+                                <th>Função</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tool-name"><a href="https://grapheneos.org" target="_blank" rel="noopener">GrapheneOS</a></td>
+                                <td>Pixel</td>
+                                <td>Android hardenizado, privacidade máxima</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://calyxos.org" target="_blank" rel="noopener">CalyxOS</a></td>
+                                <td>Pixel/Xiaomi</td>
+                                <td>Android privado com microG</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://trackercontrol.org" target="_blank" rel="noopener">TrackerControl</a></td>
+                                <td>Android</td>
+                                <td>Monitora e bloqueia rastreadores</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://netguard.me" target="_blank" rel="noopener">NetGuard</a></td>
+                                <td>Android</td>
+                                <td>Firewall sem root</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://guardianproject.info/apps/orbot" target="_blank" rel="noopener">Orbot</a></td>
+                                <td>Android/iOS</td>
+                                <td>Proxy Tor para apps</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://f-droid.org" target="_blank" rel="noopener">F-Droid</a></td>
+                                <td>Android</td>
+                                <td>Loja de apps open source</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="sub-section">
+                <div class="sub-header"><span class="sub-icon">🖥️</span>
+                    <h4>5.3 Sistemas Operacionais Privados</h4>
+                </div>
+                <div class="tool-table-wrapper">
+                    <table class="tool-table">
+                        <thead>
+                            <tr>
+                                <th>SO</th>
+                                <th>Base</th>
+                                <th>Uso</th>
+                                <th>Anonimato</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tool-name"><a href="https://tails.net" target="_blank" rel="noopener">Tails</a></td>
+                                <td>Debian</td>
+                                <td>Sistema live amnésico</td>
+                                <td class="stars">⭐⭐⭐⭐⭐</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://www.whonix.org" target="_blank" rel="noopener">Whonix</a></td>
+                                <td>Debian</td>
+                                <td>Tor isolado em VMs</td>
+                                <td class="stars">⭐⭐⭐⭐⭐</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://www.qubes-os.org" target="_blank" rel="noopener">Qubes OS</a></td>
+                                <td>Xen</td>
+                                <td>Compartimentalização total</td>
+                                <td class="stars">⭐⭐⭐⭐⭐</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://parrotsec.org" target="_blank" rel="noopener">Parrot Security</a></td>
+                                <td>Debian</td>
+                                <td>Forense e privacidade</td>
+                                <td class="stars">⭐⭐⭐⭐</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://pureos.net" target="_blank" rel="noopener">PureOS</a></td>
+                                <td>Debian</td>
+                                <td>FSF endorsed, Librem</td>
+                                <td class="stars">⭐⭐⭐⭐</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== CAMADA 6 ======== -->
+        <section class="layer-section layer-6" id="camada6">
+            <div class="layer-header">
+                <div class="layer-icon">🕵️</div>
+                <div class="layer-header-text">
+                    <h3>Camada 6: Proteção Contra OSINT Ofensivo</h3>
+                    <p>Remova rastros digitais e previna-se contra investigações</p>
+                </div>
+            </div>
+
+            <div class="sub-section">
+                <div class="sub-header"><span class="sub-icon">🧹</span>
+                    <h4>6.1 Remoção de Metadados</h4>
+                </div>
+                <div class="tool-table-wrapper">
+                    <table class="tool-table">
+                        <thead>
+                            <tr>
+                                <th>Ferramenta</th>
+                                <th>Plataforma</th>
+                                <th>Função</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tool-name"><a href="https://exiftool.org" target="_blank" rel="noopener">ExifTool</a></td>
+                                <td>Todas</td>
+                                <td>Leitura/escrita de metadados EXIF</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://exifcleaner.com" target="_blank" rel="noopener">ExifCleaner</a></td>
+                                <td>Win/Mac/Linux</td>
+                                <td>Remoção de EXIF com drag-and-drop</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://0xacab.org/jvoisin/mat2" target="_blank" rel="noopener">MAT2</a></td>
+                                <td>Linux</td>
+                                <td>Remoção de metadados de vários formatos</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://gitlab.com/juanitobananas/scrambled-exif" target="_blank" rel="noopener">Scrambled Exif</a></td>
+                                <td>Android</td>
+                                <td>Remove EXIF antes de compartilhar</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://metadatacleaner.romainvigier.fr" target="_blank" rel="noopener">Metadata Cleaner</a></td>
+                                <td>Linux</td>
+                                <td>Interface gráfica para MAT2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="workflow-box">
+                    <div class="workflow-title">🔧 Workflow de Limpeza</div>
+                    <ol>
+                        <li><span class="step-num">1</span>Fotos da câmera → ExifTool ou ExifCleaner (remover GPS,
+                            device, data)</li>
+                        <li><span class="step-num">2</span>Documentos → MAT2 (remover autor, software, timestamps)</li>
+                        <li><span class="step-num">3</span>PDFs → qpdf + exiftool (linearizar + limpar)</li>
+                        <li><span class="step-num">4</span>Antes de upload: verificar se está limpo</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="sub-section">
+                <div class="sub-header"><span class="sub-icon">🎭</span>
+                    <h4>6.2 Anti-Fingerprinting</h4>
+                </div>
+                <div class="tool-table-wrapper">
+                    <table class="tool-table">
+                        <thead>
+                            <tr>
+                                <th>Ferramenta</th>
+                                <th>Função</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tool-name"><a href="https://addons.mozilla.org/firefox/addon/canvasblocker" target="_blank" rel="noopener">CanvasBlocker</a></td>
+                                <td>Bloqueia fingerprinting canvas (Firefox)</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://ublockorigin.com" target="_blank" rel="noopener">uBlock Origin</a></td>
+                                <td>Bloqueio de trackers (modo hard)</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://privacybadger.org" target="_blank" rel="noopener">Privacy Badger</a></td>
+                                <td>Aprendizado automático de trackers (EFF)</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://noscript.net" target="_blank" rel="noopener">NoScript</a></td>
+                                <td>Controle granular de JavaScript</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://addons.mozilla.org/firefox/addon/clearurls" target="_blank" rel="noopener">ClearURLs</a></td>
+                                <td>Remove tracking parameters de URLs</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://decentraleyes.org" target="_blank" rel="noopener">Decentraleyes</a></td>
+                                <td>Emula CDNs localmente</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="sub-section">
+                <div class="sub-header"><span class="sub-icon">🔍</span>
+                    <h4>6.3 Auto-Busca (Self-OSINT)</h4>
+                </div>
+                <div class="tool-table-wrapper">
+                    <table class="tool-table">
+                        <thead>
+                            <tr>
+                                <th>Ferramenta</th>
+                                <th>Função</th>
+                                <th>Frequência</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tool-name"><a href="https://tineye.com" target="_blank" rel="noopener">TinEye</a></td>
+                                <td>Busca reversa de imagens</td>
+                                <td>Mensal</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://yandex.com/images" target="_blank" rel="noopener">Yandex Images</a></td>
+                                <td>Melhor para busca de faces</td>
+                                <td>Mensal</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://pimeyes.com" target="_blank" rel="noopener">PimEyes</a></td>
+                                <td>Busca facial avançada ($29.99/mês)</td>
+                                <td>Trimestral</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://github.com/sherlock-project/sherlock" target="_blank" rel="noopener">Sherlock</a></td>
+                                <td>Busca de username em 400+ sites</td>
+                                <td>Trimestral</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://www.google.com" target="_blank" rel="noopener">Google Dorks</a></td>
+                                <td>Busca avançada de si mesmo</td>
+                                <td>Mensal</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="config-block">
+                    <span class="comment">// Dorks para auto-busca no Google</span><br>
+                    <span class="key">"seu nome completo"</span> -site:linkedin.com -site:facebook.com<br>
+                    <span class="key">"seu e-mail"</span> filetype:pdf OR filetype:doc<br>
+                    <span class="key">"seu telefone"</span> intext: OR inurl:<br>
+                    site:pastebin.com <span class="key">"seu username"</span><br>
+                    intitle:"index of" <span class="key">"seu nome"</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== CAMADA 7 ======== -->
+        <section class="layer-section layer-7" id="camada7">
+            <div class="layer-header">
+                <div class="layer-icon">💾</div>
+                <div class="layer-header-text">
+                    <h3>Camada 7: Backup e Recuperação</h3>
+                    <p>Proteja seus dados contra perda e ransomware</p>
+                </div>
+            </div>
+
+            <div class="sub-section">
+                <div class="sub-header"><span class="sub-icon">☁️</span>
+                    <h4>7.1 Soluções de Backup Seguras</h4>
+                </div>
+                <div class="tool-table-wrapper">
+                    <table class="tool-table">
+                        <thead>
+                            <tr>
+                                <th>Serviço</th>
+                                <th>Custo</th>
+                                <th>Localização</th>
+                                <th>Zero-Knowledge</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tool-name"><a href="https://www.borgbase.com" target="_blank" rel="noopener">BorgBase</a></td>
+                                <td><span class="badge badge-paid">$2/mês</span></td>
+                                <td>Suíça/Iceland</td>
+                                <td>Sim ✅</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://tresorit.com" target="_blank" rel="noopener">Tresorit</a></td>
+                                <td><span class="badge badge-paid">$10.42/mês</span></td>
+                                <td>Suíça</td>
+                                <td>Sim ✅</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://www.sync.com" target="_blank" rel="noopener">Sync.com</a></td>
+                                <td><span class="badge badge-paid">$8/mês</span></td>
+                                <td>Canadá</td>
+                                <td>Sim ✅</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://nextcloud.com" target="_blank" rel="noopener">Nextcloud</a></td>
+                                <td><span class="badge badge-free">Grátis (self-host)</span></td>
+                                <td>Sua escolha</td>
+                                <td>Sim ✅</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://restic.net" target="_blank" rel="noopener">Restic</a></td>
+                                <td><span class="badge badge-free">Grátis</span></td>
+                                <td>Múltiplos destinos</td>
+                                <td>Sim ✅</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://kopia.io" target="_blank" rel="noopener">Kopia</a></td>
+                                <td><span class="badge badge-free">Grátis</span></td>
+                                <td>Múltiplos destinos</td>
+                                <td>Sim ✅</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== CAMADA 8 ======== -->
+        <section class="layer-section layer-8" id="camada8">
+            <div class="layer-header">
+                <div class="layer-icon">💳</div>
+                <div class="layer-header-text">
+                    <h3>Camada 8: Serviços Financeiros Privados</h3>
+                    <p>Pague sem expor sua identidade</p>
+                </div>
+            </div>
+
+            <div class="sub-section">
+                <div class="sub-header"><span class="sub-icon">💸</span>
+                    <h4>8.1 Pagamentos Anônimos e Privados</h4>
+                </div>
+                <div class="tool-table-wrapper">
+                    <table class="tool-table">
+                        <thead>
+                            <tr>
+                                <th>Serviço</th>
+                                <th>Tipo</th>
+                                <th>Privacidade</th>
+                                <th>Observação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tool-name"><a href="https://www.getmonero.org" target="_blank" rel="noopener">Monero (XMR)</a></td>
+                                <td>Criptomoeda</td>
+                                <td>Totalmente anônima</td>
+                                <td>Padrão ouro para privacidade</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://z.cash" target="_blank" rel="noopener">Zcash (ZEC)</a></td>
+                                <td>Criptomoeda</td>
+                                <td>Opcionalmente anônima</td>
+                                <td>Proteção seletiva (shielded)</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name">Cash (Dinheiro)</td>
+                                <td>Físico</td>
+                                <td>Anônimo</td>
+                                <td>Melhor para privacidade total</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://privacy.com" target="_blank" rel="noopener">Privacy.com</a></td>
+                                <td>Cartões virtuais</td>
+                                <td>Dados mascarados</td>
+                                <td>Apenas EUA</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://www.revolut.com" target="_blank" rel="noopener">Revolut</a></td>
+                                <td>Cartão virtual</td>
+                                <td>Dados mascarados</td>
+                                <td>Disponível global</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name"><a href="https://wasabiwallet.io" target="_blank" rel="noopener">Wasabi Wallet</a></td>
+                                <td>Bitcoin mixer</td>
+                                <td>Privacidade melhorada</td>
+                                <td>CoinJoin integrado</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== PLANO DE IMPLEMENTAÇÃO ======== -->
+        <section class="layer-section" id="plano">
+            <div class="layer-header" style="border: none; background: var(--bg-card);">
+                <div class="layer-icon" style="background: rgba(108, 92, 231, 0.2);">🎯</div>
+                <div class="layer-header-text">
+                    <h3>Plano de Implementação por Nível</h3>
+                    <p>Comece no nível que faz sentido para você</p>
+                </div>
+            </div>
+
+            <div class="plan-grid">
+                <div class="plan-card level-1">
+                    <div class="plan-level">Nível 1 — Básico</div>
+                    <h4>Início Imediato</h4>
+                    <p class="plan-cost">Custo: $0 | Tempo: 2-3 horas</p>
+                    <ul class="plan-items">
+                        <li>Trocar para ProtonMail ou Tutanota</li>
+                        <li>Instalar Bitwarden (senhas)</li>
+                        <li>Firefox + uBlock Origin + Privacy Badger</li>
+                        <li>Trocar busca para DuckDuckGo</li>
+                        <li>Instalar Signal (mensagens)</li>
+                        <li>Verificar vazamentos no HIBP</li>
+                        <li>Remover metadados de fotos</li>
+                        <li>Usar SimpleLogin para cadastros</li>
+                        <li>Ativar 2FA com Aegis</li>
+                        <li>Fazer busca reversa de si mesmo</li>
+                    </ul>
+                </div>
+
+                <div class="plan-card level-2">
+                    <div class="plan-level">Nível 2 — Intermediário</div>
+                    <h4>Proteção Reforçada</h4>
+                    <p class="plan-cost">~$8/mês | Tempo: 1 semana</p>
+                    <ul class="plan-items">
+                        <li>Assinar Mullvad ou ProtonVPN</li>
+                        <li>Comprar YubiKey 5 NFC ($50)</li>
+                        <li>SimpleLogin Premium ($4/mês)</li>
+                        <li>Criptografia de disco (VeraCrypt)</li>
+                        <li>Cartões virtuais (Revolut)</li>
+                        <li>Alertas DeHashed ($5/mês)</li>
+                        <li>Solicitar remoção de data brokers</li>
+                    </ul>
+                </div>
+
+                <div class="plan-card level-3">
+                    <div class="plan-level">Nível 3 — Avançado</div>
+                    <h4>Segurança Profissional</h4>
+                    <p class="plan-cost">~$30/mês | Tempo: 1 mês</p>
+                    <ul class="plan-items">
+                        <li>DeleteMe ou Incogni (remoção automática)</li>
+                        <li>GrapheneOS ou CalyxOS no celular</li>
+                        <li>Tails ou Whonix para atividades sensíveis</li>
+                        <li>Hardware keys para todas as contas</li>
+                        <li>Backup criptografado multi-jurisdição</li>
+                        <li>Monero para pagamentos privados</li>
+                        <li>Auditoria trimestral (Sherlock/Maigret)</li>
+                    </ul>
+                </div>
+
+                <div class="plan-card level-4">
+                    <div class="plan-level">Nível 4 — Paranóia/Profissional</div>
+                    <h4>Para Jornalistas e Ativistas</h4>
+                    <p class="plan-cost">$1000+/ano</p>
+                    <ul class="plan-items">
+                        <li>Múltiplos YubiKeys (backup seguro)</li>
+                        <li>Servidor próprio de e-mail</li>
+                        <li>Qubes OS para compartimentalização</li>
+                        <li>Signal/Session com disappearing messages</li>
+                        <li>Air-gapped computers para dados sensíveis</li>
+                        <li>Identidades separadas por contexto</li>
+                        <li>Consultoria profissional de OPSEC</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Checklist -->
+            <div class="sub-section">
+                <div class="sub-header"><span class="sub-icon">📋</span>
+                    <h4>Checklist de Auto-Auditoria</h4>
+                </div>
+
+                <div class="checklist-section">
+                    <h4>📅 Mensal</h4>
+                    <ul class="checklist" id="checklist-mensal">
+                        <li onclick="this.classList.toggle('checked')"><span class="check-icon">✓</span>Verificar HIBP
+                            por novos vazamentos</li>
+                        <li onclick="this.classList.toggle('checked')"><span class="check-icon">✓</span>Busca reversa de
+                            imagens novas (TinEye, Yandex)</li>
+                        <li onclick="this.classList.toggle('checked')"><span class="check-icon">✓</span>Revisar
+                            privacidade no Facebook/LinkedIn</li>
+                        <li onclick="this.classList.toggle('checked')"><span class="check-icon">✓</span>Verificar dados
+                            em TruePeopleSearch</li>
+                        <li onclick="this.classList.toggle('checked')"><span class="check-icon">✓</span>Confirmar 2FA
+                            ativo em contas críticas</li>
+                    </ul>
+                </div>
+
+                <div class="checklist-section">
+                    <h4>📅 Trimestral</h4>
+                    <ul class="checklist" id="checklist-trimestral">
+                        <li onclick="this.classList.toggle('checked')"><span class="check-icon">✓</span>Rodar
+                            Sherlock/WhatsMyName para usernames</li>
+                        <li onclick="this.classList.toggle('checked')"><span class="check-icon">✓</span>Verificar
+                            exposição em data brokers</li>
+                        <li onclick="this.classList.toggle('checked')"><span class="check-icon">✓</span>Auditar apps
+                            instalados (permissões)</li>
+                        <li onclick="this.classList.toggle('checked')"><span class="check-icon">✓</span>Revisar aliases
+                            de e-mail não usados</li>
+                        <li onclick="this.classList.toggle('checked')"><span class="check-icon">✓</span>Verificar logs
+                            de acesso em contas</li>
+                    </ul>
+                </div>
+
+                <div class="checklist-section">
+                    <h4>📅 Anual</h4>
+                    <ul class="checklist" id="checklist-anual">
+                        <li onclick="this.classList.toggle('checked')"><span class="check-icon">✓</span>Auditoria
+                            completa de exposição online</li>
+                        <li onclick="this.classList.toggle('checked')"><span class="check-icon">✓</span>Troca de senhas
+                            principais</li>
+                        <li onclick="this.classList.toggle('checked')"><span class="check-icon">✓</span>Verificação
+                            física de hardware keys</li>
+                        <li onclick="this.classList.toggle('checked')"><span class="check-icon">✓</span>Atualização de
+                            estratégia de backup</li>
+                        <li onclick="this.classList.toggle('checked')"><span class="check-icon">✓</span>Revisão de
+                            jurisdições de serviços</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Erros Comuns -->
+            <div class="sub-section">
+                <div class="sub-header"><span class="sub-icon">⚠️</span>
+                    <h4>Erros Comuns a Evitar</h4>
+                </div>
+                <div class="tool-table-wrapper error-table">
+                    <table class="tool-table">
+                        <thead>
+                            <tr>
+                                <th>Erro</th>
+                                <th>Por que é perigoso</th>
+                                <th>Solução</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tool-name" style="color:#fab1a0;">Reutilizar senhas</td>
+                                <td>Um vazamento compromete tudo</td>
+                                <td>Gerenciador + senhas únicas</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name" style="color:#fab1a0;">Ignorar atualizações</td>
+                                <td>Vulnerabilidades conhecidas</td>
+                                <td>Atualizações automáticas</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name" style="color:#fab1a0;">SMS para 2FA</td>
+                                <td>SIM swapping</td>
+                                <td>App autenticador ou hardware key</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name" style="color:#fab1a0;">VPN gratuita</td>
+                                <td>Vende seus dados</td>
+                                <td>Mullvad/ProtonVPN pagos</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name" style="color:#fab1a0;">Fotos com metadados</td>
+                                <td>Revelam local/device</td>
+                                <td>Limpar EXIF antes de postar</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name" style="color:#fab1a0;">E-mail pessoal para tudo</td>
+                                <td>Facilita correlação</td>
+                                <td>Usar aliases por categoria</td>
+                            </tr>
+                            <tr>
+                                <td class="tool-name" style="color:#fab1a0;">Oversharing social</td>
+                                <td>Engenharia social</td>
+                                <td>Revisar posts, limitar público</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Recursos -->
+            <div class="sub-section">
+                <div class="sub-header"><span class="sub-icon">📚</span>
+                    <h4>Recursos Educacionais</h4>
+                </div>
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <h5>📖 EFF Surveillance Self-Defense</h5>
+                        <p>Guia completo de proteção da Electronic Frontier Foundation</p>
+                    </div>
+                    <div class="resource-card">
+                        <h5>📖 Extreme Privacy — M. Bazzell</h5>
+                        <p>O livro mais completo sobre privacidade digital pessoal</p>
+                    </div>
+                    <div class="resource-card">
+                        <h5>📖 The Art of Invisibility — K. Mitnick</h5>
+                        <p>Técnicas de anonimato pelo hacker mais famoso do mundo</p>
+                    </div>
+                    <div class="resource-card">
+                        <h5>🌐 PrivacyTools.io</h5>
+                        <p>Comunidade e recomendações de ferramentas de privacidade</p>
+                    </div>
+                    <div class="resource-card">
+                        <h5>🌐 r/privacy (Reddit)</h5>
+                        <p>Comunidade ativa sobre privacidade e degoogling</p>
+                    </div>
+                    <div class="resource-card">
+                        <h5>🎓 Cybrary</h5>
+                        <p>Cursos gratuitos de cibersegurança para todos os níveis</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="page-footer">
+            <p>🛡️ Guia de Proteção Digital — Atualizado em 2026</p>
+            <p>Suas informações são seu poder. Proteja-as.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
