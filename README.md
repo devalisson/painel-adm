@@ -49,28 +49,6 @@ O **Systems Sentinel** é um painel completo para monitoramento e inteligência 
 - Workflows práticos e configurações recomendadas
 - Tabela de erros comuns a evitar
 
-## 🚀 Deploy
-
-### GitHub Pages (Recomendado)
-
-1. Faça um **fork** ou clone este repositório
-2. Vá em **Settings → Pages**
-3. Em **Source**, selecione a branch `main` e pasta `/`
-4. Clique em **Save**
-5. Acesse via `https://seu-usuario.github.io/nome-do-repo/`
-
-### Netlify
-
-1. Conecte o repositório no [Netlify](https://netlify.com)
-2. Build command: _(deixe vazio)_
-3. Publish directory: `.`
-4. Deploy automático a cada push
-
-### Vercel
-
-1. Importe o repositório no [Vercel](https://vercel.com)
-2. Framework preset: **Other**
-3. Deploy com um clique
 
 ### Local
 
