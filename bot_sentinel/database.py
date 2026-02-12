@@ -67,7 +67,18 @@ def add_finding(profile_id, source, content, link):
         conn.close()
         return True
     conn.close()
-    return False
+def get_recent_findings(profile_id):
+    conn = sqlite3.connect('sentinel.db')
+    cursor = conn.cursor()
+    # Pega achados das últimas 24 horas
+    cursor.execute('''
+        SELECT source, content, link, found_at 
+        FROM findings 
+        WHERE profile_id = ? AND found_at >= datetime('now', '-1 day')
+    ''', (profile_id,))
+    findings = cursor.fetchall()
+    conn.close()
+    return findings
 
 if __name__ == "__main__":
     init_db()
