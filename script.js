@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function verifyPass() {
         if (passInput.value === 'admin123') {
-            window.location.href = 'admin.html';
+            window.location.href = 'admin';
         } else {
             errorMsg.textContent = 'ACCESS_DENIED: INVALID_KEY';
             passInput.value = '';
